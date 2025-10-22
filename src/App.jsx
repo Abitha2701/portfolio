@@ -12,7 +12,12 @@ import ScrollToTop from './components/ScrollToTop.jsx'
 import ThemeToggle from './components/ThemeToggle.jsx'
 
 function App() {
-  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light')
+  const [theme, setTheme] = useState(() => {
+    const saved = localStorage.getItem('theme')
+    if (saved) return saved
+    const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    return prefersDark ? 'dark' : 'light'
+  })
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)

@@ -4,6 +4,11 @@ import { profile } from '../data/content'
 function useTyping(text, speed=50, delay=300) {
   const [out, setOut] = useState('')
   useEffect(() => {
+    const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReduced) {
+      setOut(text)
+      return
+    }
     let i = 0
     const t = setTimeout(() => {
       const id = setInterval(() => {
@@ -27,6 +32,10 @@ export default function Hero() {
         <p className="subtitle">{profile.title}</p>
         <p className="subtitle kbd">{typed || ' '}<span style={{opacity:.6}}>|</span></p>
         <div style={{display:'flex', gap:12, marginTop:16}}>
+          <a className="btn btn--primary" href="#projects">View Projects</a>
+          <a className="btn btn--secondary" href={profile.resume} download>Download Resume</a>
+        </div>
+        <div style={{display:'flex', gap:12, marginTop:12}}>
           <a className="btn" href={`mailto:${profile.email}`}>Email</a>
           <a className="btn" href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
           <a className="btn" href={profile.github} target="_blank" rel="noreferrer">GitHub</a>

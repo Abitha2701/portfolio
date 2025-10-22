@@ -9,6 +9,6 @@ export default function ScrollToTop(){
   },[])
   if(!show) return null
   return (
-    <button className="scroll-top" onClick={()=>window.scrollTo({top:0, behavior:'smooth'})} aria-label="Scroll to top">↑</button>
+    <button className="scroll-top" onClick={()=>window.scrollTo({top:0, behavior:'smooth'})} aria-label="Scroll to top" title="Scroll to top">↑</button>
   )
 }

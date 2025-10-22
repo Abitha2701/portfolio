@@ -4,61 +4,85 @@ export const profile = {
   email: 'abitha2712005@gmail.com',
   linkedin: 'https://linkedin.com/in/abitha-m-534981293',
   github: 'https://github.com/Abitha2701',
-  intro: "Hi, I’m Abitha 👋 — passionate about building creative and efficient software solutions.",
-  about: `Willing to work in teams and learn new things.\nInterested in software development, web technologies, and exploring modern frameworks.`,
+  resume: '#',
+  intro: "Hi, I’m Abitha 👋 — I design and build clean, efficient web apps with modern stacks.",
+  about: `I enjoy turning ideas into useful products and collaborating with teams. Recently built projects with React, Node, and MongoDB, focusing on performance and UX. Always learning and exploring new tools to improve developer productivity and user experience.`,
 }
 
 export const skills = {
-  languages: [
-    { name: 'HTML', level: 90 },
-    { name: 'CSS', level: 85 },
-    { name: 'Java', level: 70 },
-    { name: 'JavaScript', level: 80 },
-  ],
-  frameworks: [
-    { name: 'MERN', level: 65 },
-    { name: 'Bootstrap', level: 80 },
-  ],
-  tools: ['Git', 'GitHub', 'VS Code', 'Postman']
+  frontend: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap'],
+  backend: ['Node.js', 'REST APIs', 'MongoDB'],
+  tooling: ['Git', 'VS Code', 'Postman'],
+  languages: ['C', 'Java']
 }
 
+/* Projects array (added EchoAI + existing projects). Update repo/live/image paths as needed */
 export const projects = [
   {
+    id: 'codelearn-ml',
     title: 'CodeLearn-ML',
-    image: '/assets/project1.svg',
     description: 'Personalized learning platform using ML to adapt content based on learner performance.',
     stack: ['React', 'Node', 'Express', 'MongoDB', 'ML'],
-    demo: '#',
-    repo: '#'
+    repo: 'https://github.com/yourusername/codelearn-ml',
+    live: '#',
+    image: '/images/projects/codelearn-ml.png'
   },
   {
+    id: 'toycra',
     title: 'ToyCra',
-    image: '/assets/project2.svg',
     description: 'E-commerce platform to sell toys with cart, product filters, and admin dashboard.',
     stack: ['MERN', 'Bootstrap'],
-    demo: '#',
-    repo: '#'
+    repo: 'https://github.com/yourusername/toycra',
+    live: '#',
+    image: '/images/projects/toycra.png'
   },
   {
+    id: 'event-notify',
     title: 'Event Notification System',
-    image: '/assets/project3.svg',
     description: 'Notifies students about college events with schedule, reminders, and subscriptions.',
     stack: ['JavaScript', 'Node', 'MongoDB'],
-    demo: '#',
-    repo: '#'
+    repo: 'https://github.com/yourusername/event-notify',
+    live: '#',
+    image: '/images/projects/event-notify.png'
   },
   {
+    id: 'quiztopia',
     title: 'Quiztopia',
-    image: '/assets/project4.svg',
-    description: 'Quiz app for CS core subjects with scoring, categories, and progress.',
-    stack: ['React', 'Tailwind', 'Node'],
-    demo: '#',
-    repo: '#'
+    description: 'Quiz app for CS core subjects with scoring, categories, and progress tracking.',
+    stack: ['Flutter', 'Dart', 'SQLite'],
+    repo: 'https://github.com/yourusername/quiztopia',
+    live: '#',
+    image: '/images/projects/quiztopia.png'
   },
+  {
+    id: 'echoai',
+    title: 'EchoAI — AI News Summarizer',
+    description: 'EchoAI gathers and summarizes news from multiple sources using AI-powered NLP models. ',
+    stack: ['React', 'Node.js', 'Express', 'MongoDB', 'OpenAI / Hugging Face'],
+    repo: 'https://github.com/yourusername/echoai',
+    live: '#',
+    image: '/images/projects/echoai.png'
+  }
 ]
 
 export const certifications = [
-  { title: 'Programming in Java (NPTEL)', link: '#'},
-  { title: 'MERN Stack Internship', link: '#'},
-  { title: 'Participated in Smart India Hackathon', link: '#'},
+  {
+    id: 'ml-basics',
+    title: 'Java fundamentals',
+    issuer: 'Coursera',
+    year: 2024,
+    link: 'https://example.com/cert/ml-basics'
+    image: '/images/certs/java-fundamentals.png'
+  },
+  {
+    id: 'react-fundamentals',
+    title: 'MERN Stack Development',
+    issuer: 'FreeCodeCamp',
+    year: 2023,
+    link: 'https://example.com/cert/react-fundamentals',
+     image: '/images/certs/mern-stack.png'
+  }
 ]
+
+/* default export kept for components that import default */
+export default { profile, skills, projects, certifications }

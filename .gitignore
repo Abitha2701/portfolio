@@ -1,0 +1,5 @@
+# ... existing ignores
+
+# Server
+server/node_modules
+server/.env
