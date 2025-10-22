@@ -71,7 +71,7 @@ export const certifications = [
     title: 'Java fundamentals',
     issuer: 'Coursera',
     year: 2024,
-    link: 'https://example.com/cert/ml-basics'
+    link: 'https://example.com/cert/ml-basics',
     image: '/images/certs/java-fundamentals.png'
   },
   {
