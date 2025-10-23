@@ -92,7 +92,7 @@ export default function Navbar() {
 
           {/* Prominent CTA like the reference design */}
           <a
-            href="/resume.pdf"
+            href= "/assets/Abitha M(resume).pdf"
             className="btn btn--primary nav-cta"
             download
           >
