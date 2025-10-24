@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
       <div style={{display:'grid', placeItems:'center'}}>
         <div className="avatar" aria-hidden >
-          <img src={profile.image} alt={profile.name} height={200} width={200} style={{borderRadius: '50%', objectFit: 'cover', objectPosition: 'center', display: 'block', margin: '0 auto'}}/>
+          <img src={profile.image}  height={200} width={200} style={{borderRadius: '50%', objectFit: 'cover', objectPosition: 'center', display: 'block', margin: '0 auto'}}/>
         </div>
       </div>
       </div>

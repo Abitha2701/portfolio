@@ -7,7 +7,7 @@ export const profile = {
   resume:  '/assets/Abitha M(resume).pdf',
   intro: "Hi, I’m Abitha 👋 — I design and build clean, efficient web apps with modern stacks.",
   about: `I enjoy turning ideas into useful products and collaborating with teams. Recently built projects with React, Node, and MongoDB, focusing on performance and UX. Always learning and exploring new tools to improve developer productivity and user experience.`,
-   image:  '/assets/profile.jpeg',
+  //  image:  '/assets/profile.jpeg',
 }
 export const skills = {
   frontend: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap'],
@@ -67,7 +67,7 @@ export const certifications = [
   {
     id: 'ml-basics',
     title: 'Java fundamentals',
-    issuer: 'Coursera',
+    issuer: 'NPTEL',
     year: 2024,
     link: '/assets/nptel.png',
     image: '/assets/nptel.png'
@@ -75,7 +75,7 @@ export const certifications = [
   {
     id: 'react-fundamentals',
     title: 'MERN Stack Development',
-    issuer: 'FreeCodeCamp',
+    issuer: 'App Innovations',
     year: 2023,
     link: '/assets/intern.png',
      image: '/assets/intern.png'
